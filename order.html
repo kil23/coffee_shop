@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title> Order | COSTA COFFEE </title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Supermercado+One|Inconsolata|Tangarine|Lobster">
+
+        <script type="text/javascript">
+
+            function placeOrder(name) {
+                var x = document.getElementById(name);
+                if (x.innerHTML === "Order Now !!!") {
+                    x.innerHTML = "Order Placed";
+                    document.getElementById(name).style.backgroundColor = "#f05c51";
+                    document.getElementById(name).disabled = true;
+                } else {
+                    x.innerHTML = "Order Now !!!";
+                    document.getElementById(name).style.backgroundColor = "#77d67a";
+                }
+            }
+        </script>
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <section class="container">
+                    <h1 class="logo">
+                        COSTA'S <i class="fa fa-coffee"></i>
+                    </h1>                        
+                    
+                    <section class="navbar-menu">
+                        <a href="/homepage.html">Home</a>
+                        <a href="/homepage.html">About</a>
+                        <a href="/homepage.html">Contact</a>
+                        <a href="/homepage.html">Blog</a>
+                    </section>
+                </section>            
+            </nav>
+        </header>
+
+        <section class="page-content" >
+            <section class="coffeeMenu">
+                <h3>Playing : <strong style="font-family: monospace;"><i>Yiruma-River Flows In You</i></strong> &nbsp;&nbsp;&nbsp; 
+                    <audio controls loop autoplay>
+                        <source src="/audio/Yiruma-RiverFlowsInYou.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                      </audio>
+                </h3>
+
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Coffee & Drinks</th>
+                        <th>Description</th>
+                        <th>Rates <br> <small>(Small / Medium / Large)</small></th>
+                        <th>Option</th>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Ginger Tea</td>
+                        <td>
+                            <figure>
+                                <img src="images/gingerTea.jpeg" alt="Ginger Tea"/>
+                                <figcaption>
+                                    Ginger Tea
+                                </figcaption>                               
+                            </figure>
+                        </td>
+                        <td>$1.85 / $2.10 / $2.35</td>
+                        <td>
+                            <button id="button1" class="button" onclick="placeOrder('button1')" value="Order Now !!!">
+                                <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Iced Tea</td>
+                        <td>
+                            <figure>
+                                <img src="images/icedTea.jpeg" alt="Iced Tea"/>
+                                <figcaption>
+                                    Iced Tea
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>$2.57 / $2.80 / $3.05</td>
+                        <td>
+                            <button id="button2" class="button" onclick="placeOrder('button2')" value="Order Now !!!">
+                                <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Hot Milk</td>
+                        <td>
+                            <figure>
+                                <img src="images/hotMilk.jpeg" alt="Hot Milk"/>
+                                <figcaption>
+                                    Hot Milk
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>$1.50 / $2.50</td>
+                        <td>
+                            <button id="button3" class="button" onclick="placeOrder('button3')" value="Order Now !!!">
+                                <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Espresso</td>
+                        <td>
+                            <figure>
+                                <img src="images/espresso.jpeg" alt="Espresso"/>
+                                <figcaption>
+                                    Espresso
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>$1.85 / $2.57</td>
+                        <td>
+                            <button id="button4" class="button" onclick="placeOrder('button4')" value="Order Now !!!">
+                                <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>Americano</td>
+                        <td>
+                            <figure>
+                                <img src="images/americano.jpeg" alt="Americano"/>
+                                <figcaption>
+                                    Americano
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>$2.57 / $3.25</td>
+                        <td>
+                            <button id="button5" class="button" onclick="placeOrder('button5')" value="Order Now !!!">
+                            <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>06</td>
+                        <td>Hot Chocolate</td>
+                        <td>
+                            <figure>
+                                <img src="images/hotChocolate.jpeg" alt="Hot Chocolate"/>
+                                <figcaption>
+                                    Hot Chocolate
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>$1.85 / $2.34 / $3.12</td>
+                        <td>
+                            <button id="button6" class="button" onclick="placeOrder('button6')" value="Order Now !!!">
+                                <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>07</td>
+                        <td>Coffee / Decaf</td>
+                        <td>
+                            <figure>
+                                <img src="images/decaf.jpeg" alt="Decaf"/>
+                                <figcaption>
+                                    Decaf
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>$1.85 / $2.10</td>
+                        <td>
+                            <button id="button7" class="button" onclick="placeOrder('button7')" value="Order Now !!!">
+                                <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>08</td>
+                        <td>Iced Coffee / Iced Decaf</td>
+                        <td>
+                            <figure>
+                                <img src="images/icedCoffee.jpeg" alt="Iced Coffee"/>
+                                <figcaption>
+                                    Iced Coffee 
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>$2.57 / $2.80 / $3.04</td>
+                        <td>
+                            <button id="button8" class="button" onclick="placeOrder('button8')" value="Order Now !!!">
+                                <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>09</td>
+                        <td>Flavored Iced Coffee</td>
+                        <td>
+                            <figure>
+                                <img src="images/flavoredIcedCoffee.jpeg" alt="Flavored Iced Coffee"/>
+                                <figcaption>
+                                    Flavored Iced Coffee
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>$3.05 / $3.26 / $3.49</td>
+                        <td>
+                            <button id="button9" class="button" onclick="placeOrder('button9')" value="Order Now !!!">
+                                <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Hot Cappuccino</td>
+                        <td>
+                            <figure>
+                                <img src="images/cappuccino.jpeg" alt="Cappuccino"/>
+                                <figcaption>
+                                    Cappuccino
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>$3.05 / $3.72 / $4.52</td>
+                        <td>
+                            <button id="button10" class="button" onclick="placeOrder('button10')" value="Order Now !!!">
+                                <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Iced Cappuccino / Iced Latte</td>
+                        <td>
+                            <figure>
+                                <img src="/images/icedCappuccino.jpeg" alt="Iced Cappuccino"/>
+                                <figcaption>
+                                    Iced Latte
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>$3.05 / $3.72 / $4.52</td>
+                        <td>
+                            <button id="button11" class="button" onclick="placeOrder('button11')" value="Order Now !!!">
+                                <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Sparkling Water</td>
+                        <td>
+                            <figure>
+                                <img src="images/sparklingWater.jpeg" alt="Sparkling Water"/>
+                                <figcaption>
+                                    Sparkling Water
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>$1.50 / $1.75</td>
+                        <td>
+                            <button id="button12" class="button" onclick="placeOrder('button12')" value="Order Now !!!">
+                                <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Packaged Water</td>
+                        <td>
+                            <figure>
+                                <img src="images/bottledWater.jpeg" alt="Packaged Water"/>
+                                <figcaption>
+                                    Packaged Water
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>$1.50 / $2.00</td>
+                        <td>
+                            <button id="button13" class="button" onclick="placeOrder('button13')" value="Order Now !!!">
+                                <section id="mysection">Order Now !!!</section>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+
+        <footer>
+            <h4>
+                All rights reserved by John Doe Pvt. Ltd.
+            </h4>
+        </footer>
+    </body>
+</html>
